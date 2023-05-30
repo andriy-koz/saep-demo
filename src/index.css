@@ -1,8 +1,7 @@
 @import url('./components/EntradasYSalidas.css');
+@import url('./components/Botonera.css');
 
-*,
-*::before,
-*::after {
+*, *:: before, *:: after {
   margin: 0;
   padding: 0;
 }

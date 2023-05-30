@@ -1,15 +1,17 @@
 .entradas-salidas {
   display: flex;
   gap: 16px;
+  border: 1px solid #ccc;
+  padding: 0 16px;
 }
 
 .entradas-salidas ul {
   display: flex;
+  padding-left: 0px;
 }
 
 .entradas-salidas h4 {
-  border: 1px solid #ccc;
-  padding-bottom: 5px;
+  margin-bottom: 0px;
   padding-top: 5px;
   text-align: center;
 }

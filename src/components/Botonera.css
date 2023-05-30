@@ -1,0 +1,51 @@
+.botonera-contenedor {
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.botonera-contenedor h3 {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+
+.botonera {
+  display: flex;
+  gap: 20px;
+}
+
+.botonera-boton {
+  width: 82px;
+}
+
+.botonera-boton h4 {
+  text-align: center;
+}
+
+.botonera-boton div {
+  margin: 0 auto;
+  height: 64px;
+  width: 64px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.botonera-boton div:hover {
+  cursor: pointer;
+}
+
+.botonera-boton div:active {
+  filter: brightness(0.8);
+}
+
+.btn-inicio {
+  background-color: #016d18;
+}
+
+.btn-parada {
+  background-color: #d80000;
+}
+
+.btn-calibrar {
+  background-color: #f0ad4e;
+}
