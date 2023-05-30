@@ -1,0 +1,122 @@
+/* 1px = 5mm */
+
+.presentacion {
+  position: relative;
+  border: 1px solid #ccc;
+  margin-top: 32px;
+  width: 1200px;
+  margin: 32px auto 0px;
+  overflow-x: hidden;
+  border-bottom: 2px solid rgb(7, 2, 45);
+}
+
+.cadena {
+  position: absolute;
+  top: 40px;
+  background-color: #1e0303;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  opacity: 0.5;
+}
+
+.cabina {
+  border: 1px solid #072c7b;
+  width: 400px;
+  height: 500px;
+  margin-right: 64px;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.perchas {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  gap: 80px;
+  transform: translateX(-465px);
+}
+
+.percha {
+  width: 80px;
+  height: 300px;
+}
+
+.carro {
+  width: 30px;
+  height: 30px;
+  margin: 2px auto 0px;
+  background-color: #0b4ad2;
+  opacity: 0.5;
+}
+
+.varilla {
+  position: relative;
+  background-color: #0b4ad2;
+  width: 10px;
+  height: 60px;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.giro {
+  position: absolute;
+  background-color: #072c7b;
+  width: 40px;
+  height: 20px;
+  top: 12px;
+  left: -15px;
+  border-radius: 4px;
+}
+
+.pieza {
+  border: 1px solid #ccc;
+  height: 190px;
+  width: 76px;
+  margin: 0 auto;
+}
+
+.tacho {
+  background-color: rgb(28, 54, 3);
+  width: 76px;
+  height: 190px;
+}
+
+.fondo {
+  background-color: rgb(45, 87, 6);
+  width: 35px;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.vacio {
+}
+
+[class^='pr-sensor'] {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: chocolate;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pr-sensor-a {
+  top: 200px;
+  left: 682px;
+}
+
+.pr-sensor-b {
+  top: 200px;
+  left: 522px;
+}
+
+.pr-sensor-c {
+  top: 45px;
+  left: 842px;
+}

@@ -1,6 +1,7 @@
 @import url('./components/EntradasYSalidas.css');
 @import url('./components/Botonera.css');
 @import url('./components/DetallesSensores.css');
+@import url('./components/Presentacion.css');
 
 *, *:: before, *:: after {
   margin: 0;

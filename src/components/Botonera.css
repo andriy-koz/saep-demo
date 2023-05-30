@@ -32,10 +32,12 @@
 
 .botonera-boton div:hover {
   cursor: pointer;
+  filter: brightness(0.9);
 }
 
 .botonera-boton div:active {
   filter: brightness(0.8);
+  transform: scale(0.95);
 }
 
 .btn-inicio {
