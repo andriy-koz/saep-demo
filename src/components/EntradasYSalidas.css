@@ -1,0 +1,20 @@
+.entradas-salidas {
+  display: flex;
+  gap: 32px;
+}
+
+.entradas-salidas ul {
+  display: flex;
+}
+
+.entradas-salidas h4 {
+  border: 1px solid #ccc;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.entradas-salidas li {
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+}
