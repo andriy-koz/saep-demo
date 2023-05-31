@@ -1,10 +1,12 @@
-const DetallesYSensores = () => {
+const DetallesYSensores = ({ contador, mover }) => {
+  const animar = mover ? 'mover' : '';
+
   return (
     <div className='detalles-sensores'>
-      <div className='sensor-a'>Sensor A</div>
-      <div className='sensor-b'>Sensor B</div>
-      <div className='contador'>
-        Sensor C<div>0</div>
+      <div className={`sensor-a ${animar}`}>Sensor A</div>
+      <div className={`sensor-b ${animar}`}>Sensor B</div>
+      <div className={`contador ${animar}`}>
+        Sensor C<div>{contador}</div>
       </div>
     </div>
   );
