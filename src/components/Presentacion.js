@@ -7,7 +7,7 @@ const Presentacion = ({ moverCadena }) => {
     <div className='presentacion'>
       <div className={`pr-sensor-a ${mover}`}>A</div>
       <div className={`pr-sensor-b ${mover}`}>B</div>
-      <div className='pr-sensor-c'>C</div>
+      <div className={`pr-sensor-c ${mover}`}>C</div>
       <div className='cadena'>CADENA</div>
       <div className='cabina'>
         <div className={`lanza ${mover}`}></div>

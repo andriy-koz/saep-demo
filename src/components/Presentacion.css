@@ -93,28 +93,99 @@
 
 @keyframes animar-sensor-a {
   0%,
-  7.5% {
+  24% {
     background-color: rgb(210, 210, 30);
   }
-  8.5%,
-  45% {
+  25%,
+  49% {
     background-color: chocolate;
   }
-  46%,
-  64% {
+  50%,
+  74% {
     background-color: rgb(210, 210, 30);
   }
-  65% {
+  75% {
     background-color: chocolate;
   }
 }
 
 @keyframes animar-sensor-b {
   0%,
-  7.5% {
+  49% {
     background-color: rgb(210, 210, 30);
   }
-  8.5% {
+  50% {
+    background-color: chocolate;
+  }
+}
+
+@keyframes animar-sensor-c {
+  0%,
+  11% {
+    background-color: chocolate;
+  }
+  11.5%,
+  12.3% {
+    background-color: rgb(210, 210, 30);
+  }
+  12.8%,
+  18% {
+    background-color: chocolate;
+  }
+  18.5%,
+  19.3% {
+    background-color: rgb(210, 210, 30);
+  }
+  19.8%,
+  40.5% {
+    background-color: chocolate;
+  }
+  41%,
+  41.8% {
+    background-color: rgb(210, 210, 30);
+  }
+  42.3%,
+  44.8% {
+    background-color: chocolate;
+  }
+  45.3%,
+  46.1% {
+    background-color: rgb(210, 210, 30);
+  }
+  46.6%,
+  65.4% {
+    background-color: chocolate;
+  }
+  65.9%,
+  66.3% {
+    background-color: rgb(210, 210, 30);
+  }
+  66.8%,
+  70.1% {
+    background-color: chocolate;
+  }
+  70.6%,
+  71.4% {
+    background-color: rgb(210, 210, 30);
+  }
+  71.9%,
+  88.5% {
+    background-color: chocolate;
+  }
+  89%,
+  89.5% {
+    background-color: rgb(210, 210, 30);
+  }
+  90%,
+  91% {
+    background-color: chocolate;
+  }
+  91.5%,
+  92% {
+    background-color: rgb(210, 210, 30);
+  }
+  92.5%,
+  100% {
     background-color: chocolate;
   }
 }
@@ -280,4 +351,8 @@
 .pr-sensor-c {
   top: 45px;
   left: 800px;
+}
+
+.pr-sensor-c.mover {
+  animation: animar-sensor-c 30s linear;
 }
