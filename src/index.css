@@ -3,7 +3,7 @@
 @import url('./components/DetallesSensores.css');
 @import url('./components/Presentacion.css');
 
-*, *:: before, *:: after {
+*, *: before, *: after {
   margin: 0;
   padding: 0;
 }
