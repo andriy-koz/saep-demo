@@ -1,5 +1,124 @@
 /* 1px = 5mm */
 
+/* ANIMACIONES */
+@keyframes mover-cadena {
+  0%,
+  2% {
+    transform: translateX(-465px);
+  }
+  25%,
+  35% {
+    transform: translateX(-145px);
+  }
+  50%,
+  60% {
+    transform: translateX(175px);
+  }
+  75%,
+  85% {
+    transform: translateX(495px);
+  }
+  100% {
+    transform: translateX(1135px);
+  }
+}
+
+@keyframes mover-pistola {
+  0%,
+  2% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-180px);
+  }
+  35% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  55% {
+    transform: translateY(-180px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes mover-lanza {
+  0%,
+  2% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-180px);
+  }
+  35% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  55% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-180px);
+  }
+  85% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animar-sensor-a {
+  0%,
+  7.5% {
+    background-color: rgb(210, 210, 30);
+  }
+  8.5%,
+  45% {
+    background-color: chocolate;
+  }
+  46%,
+  64% {
+    background-color: rgb(210, 210, 30);
+  }
+  65% {
+    background-color: chocolate;
+  }
+}
+
+@keyframes animar-sensor-b {
+  0%,
+  7.5% {
+    background-color: rgb(210, 210, 30);
+  }
+  8.5% {
+    background-color: chocolate;
+  }
+}
+
 .presentacion {
   position: relative;
   border: 1px solid #ccc;
@@ -23,6 +142,7 @@
 }
 
 .cabina {
+  position: relative;
   border: 1px solid #072c7b;
   width: 400px;
   height: 500px;
@@ -31,12 +151,45 @@
   margin-top: 20px;
 }
 
+.lanza {
+  position: absolute;
+  bottom: 10px;
+  right: 110px;
+  width: 15px;
+  height: 180px;
+  background-color: #35077b;
+  opacity: 0.5;
+}
+
+.lanza.mover {
+  animation: mover-lanza 30s ease-in;
+}
+
+.pistola {
+  position: absolute;
+  bottom: 190px;
+  left: 160px;
+  width: 40px;
+  height: 15px;
+  background-color: #35077b;
+  opacity: 0.5;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.pistola.mover {
+  animation: mover-pistola 30s ease-in-out;
+}
+
 .perchas {
   position: absolute;
   top: 40px;
   display: flex;
   gap: 80px;
   transform: translateX(-465px);
+}
+
+.perchas.mover {
+  animation: mover-cadena 30s ease-in-out;
 }
 
 .percha {
@@ -111,12 +264,20 @@
   left: 682px;
 }
 
+.pr-sensor-a.mover {
+  animation: animar-sensor-a 30s linear;
+}
+
 .pr-sensor-b {
   top: 200px;
   left: 522px;
 }
 
+.pr-sensor-b.mover {
+  animation: animar-sensor-b 30s linear;
+}
+
 .pr-sensor-c {
   top: 45px;
-  left: 842px;
+  left: 800px;
 }

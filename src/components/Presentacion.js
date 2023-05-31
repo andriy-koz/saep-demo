@@ -1,17 +1,19 @@
 import Percha from './Percha';
 
-const Presentacion = () => {
+const Presentacion = ({ moverCadena }) => {
+  const mover = moverCadena ? 'mover' : '';
+
   return (
     <div className='presentacion'>
-      <div className='pr-sensor-a'>A</div>
-      <div className='pr-sensor-b'>B</div>
+      <div className={`pr-sensor-a ${mover}`}>A</div>
+      <div className={`pr-sensor-b ${mover}`}>B</div>
       <div className='pr-sensor-c'>C</div>
       <div className='cadena'>CADENA</div>
       <div className='cabina'>
-        <div className='lanza'></div>
-        <div className='pistola'></div>
+        <div className={`lanza ${mover}`}></div>
+        <div className={`pistola ${mover}`}></div>
       </div>
-      <div className='perchas'>
+      <div className={`perchas ${mover}`}>
         <Percha pieza='vacio' />
         <Percha pieza='vacio' />
         <Percha pieza='vacio' />
